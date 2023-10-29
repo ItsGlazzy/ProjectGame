@@ -388,7 +388,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -585,6 +585,7 @@ MonoBehaviour:
     tile: {fileID: 11400000, guid: 53b4a51cf4f3a5946b459ee723b4a917, type: 2}
   - tetromino: 6
     tile: {fileID: 11400000, guid: 5c279dc04de0ccb4d840a6047fe277c5, type: 2}
+  boardSize: {x: 10, y: 20}
   spawnPosition: {x: -1, y: 8, z: 0}
 --- !u!156049354 &931431334
 Grid:

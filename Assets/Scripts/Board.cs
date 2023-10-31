@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class Board : MonoBehaviour
@@ -53,7 +54,8 @@ public class Board : MonoBehaviour
     }
     private void GameOver()
     {
-        this.tilemap.ClearAllTiles();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        this.tilemap.ClearAllTiles(); 
     }
     public void Set(Piece piece)
     {
